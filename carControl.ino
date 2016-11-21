@@ -85,7 +85,7 @@ Serial.begin(9600);
 
 void loop() {
   // put your main code here, to run repeatedly:
-  float irLeftVoltage = irSensorVoltage(irLeft);
+  float irLeftVoltage = irSensorVoltage(irLeft);  // Every loop, these variables get refreshed, so all we need is some logic for this loop
   float irMidVoltage = irSensorVoltage(irMid);
   float irRightVoltage = irSensorVoltage(irRight);
 
